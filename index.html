@@ -72,8 +72,8 @@
     h1, h2 { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; }
     h1 {
       max-width: 760px; margin: 18px 0 24px;
-      font-size: clamp(3.2rem, 6.4vw, 6.4rem);
-      line-height: .98; letter-spacing: -.04em;
+      font-size: clamp(2.65rem, 4.7vw, 4.9rem);
+      line-height: 1.03; letter-spacing: -.035em;
     }
     h1 em { color: var(--teal); font-style: normal; }
     .intro { max-width: 680px; color: var(--muted); font-size: clamp(1.02rem, 1.35vw, 1.22rem); }
@@ -89,10 +89,11 @@
     .button.secondary:hover { background: var(--mint); transform: translateY(-2px); }
     .science-art {
       position: relative; min-height: 520px; overflow: hidden;
-      background:
-        linear-gradient(rgba(8,127,117,.055) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(8,127,117,.055) 1px, transparent 1px);
-      background-size: 28px 28px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .science-art img {
+      display: block; width: 100%; height: auto; object-fit: contain;
+      filter: drop-shadow(0 20px 32px rgba(16,37,62,.07));
     }
     .helix {
       position: absolute; width: 150px; height: 335px; left: 29%; top: 38%;
@@ -290,30 +291,7 @@
         </div>
       </div>
       <div class="science-art" aria-label="Abstract cytogenetics and health-data illustration">
-        <span class="coordinate co-a">GRCh38 · chr17 · TP53</span>
-        <span class="coordinate co-b">SIGNAL / INSIGHT</span>
-        <div class="helix" aria-hidden="true">
-          <i class="rung r1"></i><i class="rung r2"></i><i class="rung r3"></i><i class="rung r4"></i><i class="rung r5"></i>
-        </div>
-        <div class="karyotype" aria-label="Stylized human chromosome panel">
-          <i class="chromosome" style="--h:90px" data-label="1"></i>
-          <i class="chromosome" style="--h:82px" data-label="2"></i>
-          <i class="chromosome" style="--h:76px" data-label="3"></i>
-          <i class="chromosome" style="--h:72px" data-label="4"></i>
-          <i class="chromosome" style="--h:68px" data-label="5"></i>
-          <i class="chromosome" style="--h:62px" data-label="6"></i>
-          <i class="chromosome" style="--h:57px" data-label="7"></i>
-          <i class="chromosome" style="--h:52px" data-label="8"></i>
-          <i class="chromosome" style="--h:48px" data-label="10"></i>
-          <i class="chromosome" style="--h:44px" data-label="12"></i>
-          <i class="chromosome" style="--h:100px" data-label="X"></i>
-        </div>
-        <div class="data-card card-a"><strong>Variant classification</strong>Pathogenic · VUS · Benign</div>
-        <div class="variant-panel" aria-hidden="true">
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-        </div>
-        <div class="signal-chart" aria-hidden="true"><i class="signal-line"></i></div>
+        <img src="assets/genomics-hero.png" alt="DNA helix, chromosome panel, variant classification matrix and clinical signal chart">
       </div>
       <div class="proof">
         <div><strong>5+ years</strong><span>Clinical applications experience</span></div>
