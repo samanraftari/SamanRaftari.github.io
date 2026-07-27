@@ -261,6 +261,34 @@
       .science-art { animation: rise .75s .1s ease both; }
       @keyframes rise { from { opacity: 0; transform: translateY(18px); } }
     }
+    .contact {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.contact p {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.contact-email {
+  color: var(--teal);
+  text-decoration: none;
+  font-family: monospace;
+  letter-spacing: 0.03em;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
   </style>
 </head>
 <body>
@@ -495,13 +523,37 @@
     </section>
 
     <div class="wrap" id="contact">
-      <section class="contact">
-        <div class="eyebrow">Connect</div>
-        <h2>Interested in diagnostics, genomics or responsible health AI?</h2>
-        <p>Explore my code and current projects on GitHub. Additional professional contact information can be added here when you are ready.</p>
-        <a class="button secondary" href="https://github.com/SamanRaftari" target="_blank" rel="noopener">Visit GitHub ↗</a>
-      </section>
+  <section class="contact">
+    <div class="eyebrow">// CONTACT</div>
+    <h2>Let’s Connect</h2>
+
+    <p>
+      Open to conversations about clinical diagnostics, molecular genetics,
+      health informatics, AI in healthcare and research collaboration.
+    </p>
+
+    <div class="contact-links">
+      <a class="button secondary"
+         href="mailto:saman.raftari@yahoo.com">✉ Email</a>
+
+      <a class="button secondary"
+         href="https://www.linkedin.com/in/saman-raftari-09a23480"
+         target="_blank"
+         rel="noopener">in LinkedIn</a>
+
+      <a class="button secondary"
+         href="https://github.com/SamanRaftari"
+         target="_blank"
+         rel="noopener">{ } GitHub</a>
     </div>
+
+    <a class="contact-email"
+       href="mailto:saman.raftari@yahoo.com">
+      saman.raftari@yahoo.com
+    </a>
+  </section>
+</div>
+    
   </main>
 
   <footer>
