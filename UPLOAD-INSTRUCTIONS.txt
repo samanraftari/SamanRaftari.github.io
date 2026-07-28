@@ -1,0 +1,12 @@
+Upload these five files to the root of the SamanRaftari.github.io repository:
+
+favicon.ico
+favicon.svg
+favicon-32x32.png
+favicon-16x16.png
+apple-touch-icon.png
+
+They must be beside index.html, not inside a folder.
+
+Then copy the five <link> lines from favicon-code.html into the <head>
+section of index.html.
